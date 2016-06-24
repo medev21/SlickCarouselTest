@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slick Carousel</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  </head>
+  <body>
+
+    <div class="class" style="margin: 0 30px;">
+      <div style="width: 300px; background: orange;"><h3>1</h3></div>
+      <div style="width: 300px; background: red;"><h3>2</h3></div>
+      <div style="width: 300px; background: blue;"><h3>3</h3></div>
+      <div style="width: 300px; background: pink;"><h3>4</h3></div>
+      <div style="width: 300px; background: green;"><h3>5</h3></div>
+      <div style="width: 300px; background: purple;"><h3>6</h3></div>
+      <div style="width: 300px; background: grey;"><h3>7</h3></div>
+      <div style="width: 300px; background: yellow;"><h3>8</h3></div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.class').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        // swipeToSlide: true,
+        // autoplay: true,
+        autoplaySpeed: 2000,
+        variableWidth: true
+       });
+    });
+
+  </script>
+</html>
